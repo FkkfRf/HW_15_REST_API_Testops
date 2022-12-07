@@ -29,15 +29,17 @@ allure {
 }
 dependencies {
     testImplementation(
-    "org.junit.jupiter:junit-jupiter-api:5.9.1",
-    "com.codeborne:selenide:6.10.1",
-    "io.qameta.allure:allure-selenide:$allureVersion",
-    "io.rest-assured:rest-assured:5.3.0",
-    "io.qameta.allure:allure-rest-assured:$allureVersion",
-    "com.github.javafaker:javafaker:1.0.2",
-    "com.fasterxml.jackson.core:jackson-databind:2.14.1",
-    "org.assertj:assertj-core:$assertJVersion",
-            "org.slf4j:slf4j-simple:$slf4jVersion"
+            "org.junit.jupiter:junit-jupiter-api:5.9.1",
+            "com.codeborne:selenide:6.10.1",
+            "io.qameta.allure:allure-selenide:$allureVersion",
+            "io.rest-assured:rest-assured:5.3.0",
+            "io.qameta.allure:allure-rest-assured:$allureVersion",
+            "com.github.javafaker:javafaker:1.0.2",
+            "com.fasterxml.jackson.core:jackson-databind:2.14.1",
+            "org.assertj:assertj-core:$assertJVersion",
+            "org.slf4j:slf4j-simple:$slf4jVersion",
+            'com.github.javafaker:javafaker:1.0.2',
+            'org.aeonbits.owner:owner:1.0.12'
     )
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
 }

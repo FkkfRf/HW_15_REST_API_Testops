@@ -1,6 +1,7 @@
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import config.ProjectProvider;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import io.restassured.RestAssured;
@@ -15,9 +16,8 @@ import static io.qameta.allure.Allure.step;
 public class BaseTest {
     @BeforeAll
     static void sertUp() {
-        step("Устанавливаем базовый URL", () -> {
-            Configuration.baseUrl = "https://allure.autotests.cloud";
-            RestAssured.baseURI = "https://allure.autotests.cloud";
+        step("Устанавливаем базовый URI для REST API, URL для UI", () -> {
+            ProjectProvider.configBase();
             RestAssured.filters(withCustomTemplates());
         });
         step("Устанавливаем интеграцию с Selenide", () ->
