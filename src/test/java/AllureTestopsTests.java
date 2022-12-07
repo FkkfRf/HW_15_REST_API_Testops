@@ -21,9 +21,6 @@ public class AllureTestopsTests extends BaseTest {
             PASSWORD = "allure8",
             USER_TOKEN = "efd32a69-217f-41fa-9701-55f54dd55cd4"; // create it in allure_url//user/30
 
-
-
-
     @Test
     void loginTest() {
         open("");

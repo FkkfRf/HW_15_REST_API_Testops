@@ -1,6 +1,5 @@
 package config;
 
-import io.restassured.RestAssured;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
