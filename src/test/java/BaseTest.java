@@ -15,7 +15,7 @@ import static io.qameta.allure.Allure.step;
 
 public class BaseTest {
     @BeforeAll
-    static void sertUp() {
+    static void setUp() {
         step("Устанавливаем базовый URI для REST API, URL для UI", () -> {
             ProjectProvider.configBase();
             RestAssured.filters(withCustomTemplates());
