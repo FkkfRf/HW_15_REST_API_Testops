@@ -3,6 +3,6 @@ package models.lombok;
 import lombok.Data;
 
 @Data
-public class CreateTestCaseBody {
+public class CaseBody {
     private String name;
 }
