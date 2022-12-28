@@ -34,10 +34,10 @@ public class BaseTest {
     @AfterEach
     void addAttachments() {
         step("прикрепляем логи и отчеты выполнения", () -> {
-/*            Attach.screenshotAs("Last screenshot");
+            Attach.screenshotAs("Last screenshot");
             Attach.pageSource();
             Attach.browserConsoleLogs();
-            Attach.addVideo();*/
+            Attach.addVideo();
         });
     }
 
