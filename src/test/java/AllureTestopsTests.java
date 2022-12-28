@@ -61,7 +61,7 @@ public class AllureTestopsTests extends BaseTest {
         List<StepData> stepList = new ArrayList<>();
 
         for (int i = 0; i < 5; i++) {
-            stepName = testCaseName + " Step " + String.valueOf(i+1);
+            stepName = testCaseName + " Step " + (i+1);
             StepData stepData = new StepData();
             stepData.setName(stepName);
             stepData.setStepsCount(i);
